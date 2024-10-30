@@ -19,7 +19,7 @@ jobs:
         
       - name: 安装依赖
         run: |
-          if [ -z "${MY_URL}" ]; then
+          if [ -z "${MY_URL0}" ]; then
             exit 1  # 退出
           fi
           sudo apt-get update
