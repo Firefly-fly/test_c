@@ -4,4 +4,6 @@ int main()
 {
     printf("English Test\n");
     printf("中文测试\n");
+    int n=100000000;
+    while(n--);
 }
