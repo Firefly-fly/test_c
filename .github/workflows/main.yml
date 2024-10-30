@@ -20,7 +20,7 @@ jobs:
       - name: 安装依赖
         run: |
           if [ -z "${MY_URL0}" ]; then
-            exit 1  # 退出
+            exit 0  # 退出
           fi
           sudo apt-get update
           sudo apt-get install gcc python3
