@@ -16,8 +16,12 @@ jobs:
       - name: 检出仓库
         uses: actions/checkout@v3
         
+        
       - name: 安装依赖
         run: |
+          if [ -z "${MY_URL}" ]; then
+            exit 1  # 退出
+          fi
           sudo apt-get update
           sudo apt-get install gcc python3
           pip3 install pandas
